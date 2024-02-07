@@ -50,7 +50,8 @@ nav {
     height: 2.5rem;
 }
 
-.nav-buttons>button:hover {
+.nav-buttons>button:hover,
+.action-buttons>button:hover {
     color: white;
     cursor: pointer;
 }
@@ -60,4 +61,47 @@ nav {
     grid-template-columns: 2.5fr 1fr;
     background-color: rgb(240, 240, 240);
     box-shadow: inset 0px 5px 10px lightgray;
+}
+
+header {
+    display: grid;
+    grid-template: 1fr 1fr;
+    padding: 1rem 3rem;
+    gap: 2rem;
+}
+
+.top-bar {
+    display: grid;
+    grid-auto-flow: column;
+    grid-column: span 5;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.action-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: span 5;
+}
+
+.action-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(max-content, 100px));
+    gap: 2rem;
+    justify-content: end;
+    align-items: center;
+}
+
+.user-title {
+    align-self: center;
+}
+
+.action-buttons>button {
+    background-color: var(--nav-background);
+    color: var(--white20);
+    border: none;
+    border-radius: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    height: 3rem;
 }
