@@ -10,6 +10,11 @@
     --white20 : rgb(230, 230, 230);
 }
 
+@font-face {
+    font-family: "roboto-medium";
+    src: url(/fonts/Roboto-Medium.ttf);
+}
+
 main {
     display: grid;
     grid-template: minmax(220px, 1fr) 5fr / minmax(max-content, 1fr) 5fr;
