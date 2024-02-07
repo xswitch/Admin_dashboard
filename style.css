@@ -135,7 +135,8 @@ input[type="search"] {
 
 .main-content>h2,
 .announcements>h2,
-.trending>h2 {
+.trending>h2,
+.a-card>h3 {
     font-weight: 500;
 }
 
@@ -179,6 +180,22 @@ input[type="search"] {
     align-self: start;
     height: 100%;
     border-radius: 10px;
+}
+
+.announcements>div {
+    display: grid;
+    grid-template-rows: 1fr 1px 1fr 1px 1fr;
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+}
+
+.a-card {
+    align-self: center;
+}
+
+.separator {
+    width: 100%;
+    background-color: rgba(170, 170, 170, 0.5);
 }
 
 .card,
