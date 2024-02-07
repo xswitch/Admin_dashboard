@@ -44,7 +44,7 @@ nav {
 .nav-buttons {
     display: grid;
     width: 100%;
-    gap: 10px;
+    gap: 1rem;
     background-color: var(--nav-background);
 }
 
@@ -55,7 +55,7 @@ nav {
     width: 100%;
     background-color: var(--nav-background);
     color: var(--white20);
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: bold;
     height: 2.5rem;
     display: grid;
@@ -159,7 +159,7 @@ input[type="search"] {
 .content {
     display: grid;
     grid-template-columns: 2.5fr minmax(300px, 1fr);
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(230, 230, 230);
     box-shadow: inset 0px 5px 10px lightgray;
     gap: 2rem;
     padding-top: 2rem;
@@ -193,6 +193,7 @@ input[type="search"] {
     display: grid;
     grid-template-columns: 10px 1fr;
     grid-template-rows: 1fr 1fr;
+    background-color: white;
 }
 
 .card-text {
@@ -211,6 +212,20 @@ input[type="search"] {
     font-size: 1.1rem;
     font-weight: 400;
     color: rgb(100, 100, 100);
+}
+
+.card-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 2rem);
+    align-items: center;
+    justify-content: end;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.card-buttons>img:hover {
+    cursor: pointer;
+    filter: brightness(0) saturate(100%) invert(39%) sepia(0%) saturate(2809%) hue-rotate(342deg) brightness(88%) contrast(101%);
 }
 
 .orange-bar {
@@ -261,9 +276,35 @@ input[type="search"] {
 
 .trending>div {
     display: grid;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     grid-template-columns: 1fr;
     padding: 1.5rem;
+}
+
+.trending-row {
+    display: grid;
+    grid-template-columns: 4rem 1fr;
+    align-items: center;
+    gap: 1rem;
+}
+
+.trending-info>h3 {
+    font-weight: 500;
+}
+
+.trending-info>p {
+    color: rgb(100, 100, 100);
+}
+
+.trending-row>img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 2rem;
+}
+
+.trending-info {
+    display: grid;
+    gap: 3px;
 }
 
 .card,
