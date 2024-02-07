@@ -29,9 +29,16 @@ nav {
     padding-right: 2rem;
 }
 
+.page-title {
+    display: grid;
+    grid-template-columns: 1.5rem 1fr;
+    gap: 1rem;
+    align-items: center;
+    padding-left: 2rem;
+}
+
 .page-title>h1 {
     font-size: 2.5rem;
-    padding-left: 2rem;
 }
 
 .nav-buttons {
@@ -83,14 +90,19 @@ header {
 
 .top-bar {
     display: grid;
-    grid-template-columns: minmax(300px, 3fr) 100px minmax(200px, 2fr);
+    grid-template-columns: 2rem minmax(300px, 3fr) 100px minmax(200px, 2fr);
     grid-column: span 5;
     align-items: center;
+    gap: 1rem
 }
 
 .top-bar-info {
-    grid-column: -2;
-    justify-self: end;
+    grid-column: -2 / -1;
+    justify-self: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 2rem 4rem 1fr;
+    gap: 3rem;
 }
 
 input[type="search"] {
@@ -99,12 +111,14 @@ input[type="search"] {
     height: 2rem;
     font-size: 1.5rem;
     border-radius: 1rem;
+    padding-left: 1rem;
 }
 
 .action-bar {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 5rem 1fr 1fr;
     grid-column: span 5;
+    gap: 2rem;
 }
 
 .action-buttons {
@@ -127,6 +141,18 @@ input[type="search"] {
     font-size: 1.2rem;
     font-weight: bold;
     height: 3rem;
+}
+
+.profile-picture {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    align-self: center;
+}
+
+.action-bar>.profile-picture {
+    height: 5rem;
+    width: 5rem;
 }
 
 /* CONTENT */
